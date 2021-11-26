@@ -175,3 +175,40 @@ nav{
     border-radius: solid 46px;
     color: #FFFFFF;
 }
+
+.container__access{
+    background: #fff;
+    max-width: 43rem;
+    position: fixed;
+    left: 20rem;
+    text-align: center;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}
+
+.container-title-contra-aseso{
+    background-color: 6190E;
+    
+}
+
+
+.enunciado{
+    display: block;
+    margin: auto;
+    border-radius: 1px solid black;
+}
+
+.strong{
+
+    font-weight: bolder;
+}
+
+.text_asesor_contra{
+    margin: 1rem;
+}
+
+.boton_menu-a{
+    position: relative;
+    left: 1.5rem;
+}
+
