@@ -189,10 +189,12 @@ input[type=submit]:active {
     background: #fff;
     max-width: 43rem;
     position: fixed;
-    left: 20rem;
+    left: 26rem;
     text-align: center;
     padding-right: 2rem;
     padding-bottom: 2rem;
+    border-radius: 0.5rem;
+
 }
 
 .container-title-contra-aseso{
@@ -203,7 +205,7 @@ input[type=submit]:active {
 
 .enunciado{
     display: block;
-    margin: auto;
+    margin: 12px;
     border-radius: 1px solid black;
 }
 
@@ -215,6 +217,18 @@ input[type=submit]:active {
 .text_asesor_contra{
     margin: 1rem;
 }
+.hr_separar-asesor{
+  margin: 12px;
+
+}
+.validacion{
+  display: block;
+  width: 30rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
 
 .boton_menu-a{
     position: relative;
