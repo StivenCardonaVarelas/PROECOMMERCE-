@@ -168,6 +168,7 @@ input[type=submit]:active {
 }
 
 
+
 .nav-main {
     font-size: 17px;
     display: flex;
@@ -178,66 +179,9 @@ input[type=submit]:active {
     background: #6190E8;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A7BFE8, #6190E8);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A7BFE8, #6190E8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    margin-bottom: auto;
-    position: relative;
-    border-radius: solid 46px;
-    color: #FFFFFF;
-}
-
-.container__access{
-    background: #fff;
-    max-width: 43rem;
-    position: fixed;
-    left: 26rem;
-    text-align: center;
-    padding-right: 2rem;
-    padding-bottom: 2rem;
-    border-radius: 0.5rem;
-
-}
-
-.container-title-contra-aseso{
-    background-color: 6190E;
-    
-}
-
-
-.enunciado{
-    display: block;
-    margin: 12px;
-    border-radius: 1px solid black;
-}
-
-.strong{
-
-    font-weight: bolder;
-}
-
-.text_asesor_contra{
-    margin: 1rem;
-}
-.hr_separar-asesor{
-  margin: 12px;
-
-}
-.validacion{
-  display: block;
-  width: 30rem;
-  text-align: center;
-  margin-top: 1rem;
-  padding-left: 1rem;
-}
-
-
-.boton_menu-a{
-    position: relative;
-    left: 1.5rem;
-}
-
-  
+  }
   .nav-brand {
-    width: 50px;
+    width: 100px;
   }
   /*nav left*/
   .nav-main ul {
@@ -308,5 +252,68 @@ input[type=submit]:active {
   }
 
 
-  
+  .container__access{
+    background: #fff;
+    max-width: 43rem;
+    position: fixed;
+    left: 26rem;
+    text-align: center;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
 
+}
+
+.container-title-contra-aseso{
+    background-color: 6190E;
+    
+}
+
+
+.enunciado{
+    display: block;
+    margin: 12px;
+    border-radius: 1px solid black;
+}
+
+.strong{
+
+    font-weight: bolder;
+}
+
+.text_asesor_contra{
+    margin: 1rem;
+}
+.hr_separar-asesor{
+  margin: 12px;
+
+}
+.validacion{
+  display: block;
+  width: 30rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+
+.boton_menu-a{
+    position: relative;
+    left: 1.5rem;
+}
+/*styles de los errores*/
+.errores{
+    background-color: #ff0000e2 ;
+    color:   #FFFFFF ;
+    margin-left: 10px;
+    visibility: hidden;
+    position: absolute;
+    padding: 2px;
+    border-radius: 3px;
+    height: 25px;
+    width: 210px;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 0.9rem;
+
+}
