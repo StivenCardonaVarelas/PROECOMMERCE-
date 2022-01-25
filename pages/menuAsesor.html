@@ -4,57 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css"  type="text/css">
-    <title>Menu</title>
+    <link rel="stylesheet" href="../css/Styles.css" type="text/css">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <title>Menu asesorias</title>
 </head>
 <body>
-    <nav class=nav-main>
-        <img src="/images/logo.png" alt="Precommerce" class="nav-brand">
-        <ul class="nav-menu">
-            <li>
-                <a href=""></a>
-            </li>
-            <li>
-                <a href="">Asesorias pendientes </a>
-            </li>
-            <li>
-                <a href="">Perfil</a>
-            </li>
-            <li>
-                <a href="">Cerrar sesion</a>
-            </li>
-
-        </ul>
-    </nav>
-    <hr>
-    
-    <div class="container">
-       
-        
-        <h1>¿Que deseas hacer?</h1>
-
-
-        <div class="menu">
-           
-            <button type="submit" class="boton_menu">
-                Publicar asesorias
-            </button>
-            <br>
-            <br>
-            <button type="submit" class="boton_menu">
-                Tomar asesorias
-
-            </button>
-            <br>
-            <div id="lower">
-                 <br>
-                <button type="submit" class="boton_menu">
-               Salir
-            </button>
-            </div>
-           
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="precommerce" class="nav-brand">
         </div>
-    </div>
-    
+        <div class="menu" id="menudesktop">
+            <nav class="nav-main"> 
+                <ul class="nav-menu">
+                    <li class="linav">
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Asesorias pendientes</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Perfil</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./index.html" onclick="cerrarSesion()">Cerrar sesion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu" id="menumobile">
+            <div class="burguer">
+                <img src="../images/burger-modo-noct.svg" alt="menu" id="openIcon">
+            </div>
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li class="linav">
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Asesorias pendientes</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Perfil</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./index.html" onclick="cerrarSesion()">Cerrar sesion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <secttion class="main space2">
+
+        <div class="publiAsesoria">
+            <h1 class="space">Bienvenido</h1>
+        </div>
+        
+        <div class="publiAsesoria">
+            <button type="submit" class="boton_menu">
+                <a href="./crearAsesorias.html">Asesorias Disponibles</a>
+            </button>
+        </div>
+
+        <div class="publiAsesoria">
+            <button type="submit" class="boton_menu">
+                <a href="./crearAsesorias.html">Pendientes</a>
+            </button>
+        </div>
+
+        <div class="publiAsesoria">
+            <button type="submit" class="boton_menu">
+                <a href="./crearAsesorias.html">Perfil</a>
+            </button>
+        </div>
+
+    </secttion>
+    <script src="../js/burgerMenu.js"></script>
 </body>
 </html>

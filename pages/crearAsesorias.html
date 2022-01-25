@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <title>Crear Asesoria</title>
+    <link rel="stylesheet" href="../css/Styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="precommerce" class="nav-brand">
+        </div>
+        <div class="menu">
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li class="linav">
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Asesorias pendientes</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Perfil</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./index.html" onclick="cerrarSesion()">Cerrar sesion</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="crearMain">
+        <div>
+            <h1>CREAR ASESORIA</h1>
+        </div>
+        <form action="" method="post" id="crearA">
+            <div class="titleCrear">
+                <label for="">Nombre Asesor</label>
+                <input type="text" name="nombreasesor" id="nombreAsesor" class="input-crear"
+                    placeholder="nombre asesor">
+            </div>
+            <div class="titleCrear">
+                <label for="fecha">Fecha</label>
+                <input type="date" name="" id="" class="input-crear">
+            </div>
+            <div class="titleCrear">
+                <label for="hora">hora</label>
+                <input type="time" name="" id="" class="input-crear">
+            </div>
+            <div class="titleCrear">
+                <label for="">Tema</label>
+                <input type="text" name="nombreasesor" id="nombreAsesor" class="input-crear" placeholder="Tema">
+            </div>
+            <div class="titleCrear">
+                <label for="">Descripcion:</label>
+
+                <textarea id="descripcion" name="descripcion" rows="7" cols="33">
+                
+                </textarea>
+            </div>
+            <div class="titleCrearButtons">
+                <input type="submit" value="Solicitar" class="buttonCrear">
+                <input type="submit" value="Publicar" class="buttonCrear green">
+            </div>
+        </form>
+    </section>
+    <!-- section>
+        <div class="container__access"  action="Usuarios" onsubmit="return validarPublicarAsesoria()">
+                <div class="form_contra_aseso">
+                        <form action="contra_aseso--li">
+                            <ul class="form_contra_asesor">
+                                <label for="" class="enunciado">
+                                        <span class="strong">Nombre Asesor</span>
+                                        <input type="text" class="validacion" name="nombreAsesor"> 
+                                        <span id="validar" class="errores">text</span>
+                                </label>
+                                <span id="nombreAsesor" class="errores">text</span>
+                                <hr class="hr_separar-asesor">
+
+                                <label for="" class="enunciado">
+                                    <span class="strong">Fecha</span>
+                                </label>
+                                <input type="date">
+                                <hr class="hr_separar-asesor">
+
+                                <label for="" class="enunciado">
+                                     <span class="strong"> Hora</span>
+                                </label>
+                                <input type="time">
+                                <hr class="hr_separar-asesor">
+
+                                <label for="" class="enunciado">
+                                    <span class="strong">Descripcion</span>
+                                     <input type="text" class="validacion" name="descripcion">
+                                     <span id="validar" class="errores">text</span>
+                                </label>
+                                <span id="descripcion" class="errores">text</span>
+                            </ul>
+                            <br>
+                            <br>
+                            <button type="submit" class="boton_menu boton_menu-a">
+                                Solicitar
+                             </button>
+
+                             <button type="submit" class="boton_menu boton_menu-a" onclick="publicarAsesoria()">
+                                Publicar
+                             </button>
+                            
+                        </form>
+                </div>
+        </div>
+    </section> -->
+    <script type="text/javascript" src="../js/publicarAsesorias.js"> </script>
+
+</body>
+
+</html>

@@ -4,43 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css"  type="text/css">
+    <link rel="stylesheet" href="../css/Styles.css"  type="text/css">
     <title>Registrate</title>
 </head>
 <body>
-    <nav class=nav-main2>
-        <img src="" alt="" class="nav-brand">
-        <ul class="nav-menu">
-            <li>
-               PRECOMMERCE
-            </li>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="precommerce" class="nav-brand">
+        </div>
+        <div class="menu">
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li class="linav">
+                        <a href="./index.html">PRECOMMERCE</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./index.html ">Entrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        </ul>
-    </nav>
-    <hr>
-    <div class="container">
-        <h1>
-            Registro de usuario 
-    </h1>
-        <form>
-            <label for="name">Nombre: </label>
-            <input type="name">
-            <br>
-            <label for="name">Email@: </label>
-            <input type="name">
-            <br>
-            <!-- Password -->
-            <label for="username">Password:</label>
-            <input type="password">
-            <br>
-            <div id="lower">
-                <input type="checkbox"><label class="check" for="checkbox">Asesor</label>
-                <input type="checkbox"><label class="check" for="checkbox">Usuario corriente</label>
-                <!-- Submit Button -->
-                <input type="submit" value="Enviar">
-        </form>
+    <secttion class="main">
+        <div class="container">
+            <div class="inicioSesion">
+                <h1>Registrate</h1>
+            </div>
+            <div class="formulario">
+                <form method="post" action="Usuarios" onsubmit="return validarIniciosesion()">
+                    <div class="div-email">
+                        <div>
+                            <label for="name" id="email">Nombre:</label>
+                        </div>
+                        <input type="text" name="correo" id="correo" required>
+                        <!-- <div>
+                            <span id="email" class="errores">text</span>
+                        </div> -->
+                    </div>
+                    <!-- Username -->
+                    <div class="div-email">
+                        <div>
+                            <label for="email" id="email">Email@:</label>
+                        </div>
+                        <input type="email" name="correo" id="correo" required>
+                        <!-- <div>
+                            <span id="email" class="errores">text</span>
+                        </div> -->
+                    </div>
+                    <!-- Password -->
+                    <div class="div-password">
+                        <div>
+                            <label for="username" class="passw">Password:</label>
+                        </div>
+                        <input type="password" name="contrasena" class="passw" id="password" required>
+                        <div>
+                            <span id="contrasena" class="errores" class="passw">text</span>
+                            <!-- <span id="validar" class="errores" class="passw">text</span> -->
+                        </div>
+                    </div>
+                    <div id="lower">
+                        <div>
+                            <input type="checkbox" class="passw espacio">
+                            <label class="check" for="checkbox" class="passw">Asesor</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="passw espacio">
+                            <label class="check" for="checkbox" class="passw">Usuario corriente</label>
+                        </div>
+                        <!-- Submit Button -->
+                        <input type="submit" value="Entrar" class="botonLogin">
+                    </div>
 
-    </div>
+
+
+
+                </form>
+            </div>
+        </div>
+    </secttion>
     
 </body>
 </html>
+
+<!-- <form>
+    <label for="name">Nombre: </label>
+    <input type="name">
+    <br>
+    <label for="name">Email@: </label>
+    <input type="name">
+    <br>
+    <-- Password ->
+    <label for="username">Password:</label>
+    <input type="password">
+    <br>
+    <div id="lower">
+        <input type="checkbox"><label class="check" for="checkbox">Asesor</label>
+        <input type="checkbox"><label class="check" for="checkbox">Usuario corriente</label>
+        <-- Submit Button ->
+        <input type="submit" value="Enviar">
+</form> -->

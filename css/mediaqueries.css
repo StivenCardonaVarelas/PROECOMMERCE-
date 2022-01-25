@@ -1,0 +1,43 @@
+#menumobile{
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    #menudesktop{
+        display: none;
+    }
+    #menumobile{
+        display: block;
+    }
+    .nav-menu{
+        position: absolute;
+        margin-left: -80%;
+        margin-top: 6%;
+        /* display: flex; */
+        justify-content: space-around;
+        inline-size: 83%;
+        block-size: 70%;
+        flex-direction: column;
+        border: 5px solid red ;
+        background-color: rgba(30, 45, 62, .8);
+        display: none;
+    }
+
+    ul li{
+        margin-right: 0px;
+        align-self: flex-end;
+    }
+}
+@media screen and (max-width: 400px) {
+    ul{
+        position: absolute;
+        margin-left: -80%;
+        margin-top: 12%;
+        display: flex;
+        inline-size: 83%;
+        block-size: 40%;
+        flex-direction: column;
+        border: 5px solid red ;
+        
+        background-color: rgba(30, 45, 62, .8);
+    }
+}

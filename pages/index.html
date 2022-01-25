@@ -1,50 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles.css"  type="text/css">
+    <link rel="shortcut icon" href="../images/logo.png">
+    <link rel="stylesheet" href="../css/Styles.css" type="text/css">
     <title>Precommerce</title>
 </head>
+
 <body>
-    <nav class=nav-main2>
-        <img src="" alt="" class="nav-brand">
-        <ul class="nav-menu">
-            <li>
-               PRECOMMERCE
-            </li>
-
-        </ul>
-    </nav>
-    <hr>
-    <div class="container">
-        <div>
-             <h1>Inicio sesion</h1>
+    <header>
+        <div class="logo">
+            <img src="../images/logo.png" alt="precommerce" class="nav-brand">
         </div>
-           <form>
-            
-                <!-- Username -->
-                <label for="name">Email@:</label>
-                <input type="email">
-                <br>
-                <br>
-                <!-- Password -->
-                <label for="username">Password:</label>
-                <input type="password">
-                <br>
-                <p><a href="#">Forgot your password?</a>
-                <div id="lower">
-                    <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>
-                    <!-- Submit Button -->
-                    <input type="submit" value="Entrar">
-                </div>
-             
+        <div class="menu">
+            <nav class="nav-main">
+                <ul class="nav-menu">
+                    <li class="linav">
+                        <a href="./index.html">PRECOMMERCE</a>
+                    </li>
+                    <li class="linav">
+                        <a href="./registro.html">Registrate</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <secttion class="main">
+        <div class="container">
+            <div class="inicioSesion">
+                <h1 >Inicio sesion</h1>
+            </div>
+            <div class="formulario">
+                <form method="post" action="Usuarios" onsubmit="return validarIniciosesion()">
+                    <!-- Username -->
+                    <div class="div-email">
+                        <div>
+                            <label for="name" id="email">Email@:</label>
+                        </div>
+                        
+                        <input type="email" name="correo" id="correo" required>
+                        <!-- <div>
+                            <span id="email" class="errores">text</span>
+                        </div> -->
+                    </div>
+                    <!-- Password -->
+                    <div class="div-password">
+                        <div>
+                            <label for="username" class="passw">Password:</label>
+                        </div>
+                        <input type="password" name="contrasena" class="passw" id="password" required>
+                        <div>
+                            <span id="contrasena" class="errores" class="passw">text</span>
+                            <!-- <span id="validar" class="errores" class="passw">text</span> -->
+                        </div>
+                    </div>
+                    <div id="lower">
+                        <div>
+                            <input type="checkbox" class="passw espacio">
+                            <label class="check" for="checkbox" class="passw">Keep me logged in</label>
+                        </div>
+                        <!-- Submit Button -->
+                        <input type="submit" value="Entrar" class="botonLogin">
+                    </div>
 
 
-           </form>
 
-    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </secttion>
     
+    <script type="text/javascript" src="../js/navegacion.js"> </script>
 </body>
+
 </html>
