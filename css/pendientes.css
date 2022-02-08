@@ -1,0 +1,53 @@
+.asesoriasPendientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  /*   border: 5px solid red; */
+    padding: 40px;
+}
+.cardAsesoria{
+    width: 30%;
+    align-self: center;
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 3%;
+    background: rgba(97, 144, 232, .8);
+}
+.wrapcard {
+    align-self: center;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+}
+#input-precio{
+    align-self: center;
+    padding: 10px 10px 10px 10%;
+    border-radius: 120px;
+}
+.wc2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.cent{
+    align-self: center;
+}
+.descrip{
+    width: 80%;
+    align-self: center;
+}
+.buttonConfirmar{
+    align-self: center;
+    border-radius: 80px;
+    padding: 20px 65px 20px 65px;
+}
+.titasp{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}

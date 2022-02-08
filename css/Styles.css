@@ -1,5 +1,7 @@
 @import '../css/mediaqueries.css';
-@import '../css/mobile.css';
+@import '../css/crear.css';
+@import '../css/pendientes.css';
+@import '../css/perfil.css';
 *{
   margin: 0;
   padding: 0;
@@ -124,7 +126,6 @@ footer{
   /* background-color: rgba(97, 144, 232, .4); */
   width: 50%;
   margin-top: 5%;
-  height: 100%;
   align-self: center;
   /* padding-bottom: 3%; */
   

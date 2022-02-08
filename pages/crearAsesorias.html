@@ -20,13 +20,13 @@
             <nav class="nav-main">
                 <ul class="nav-menu">
                     <li class="linav">
-                        <a href="./index.html">Inicio</a>
+                        <a href="./menuAsesor.html">Inicio</a>
                     </li>
                     <li class="linav">
-                        <a href="./registro.html">Asesorias pendientes</a>
+                        <a href="./asesoriasDisponibles.html">Asesorias Disponibles</a>
                     </li>
                     <li class="linav">
-                        <a href="./registro.html">Perfil</a>
+                        <a href="./perfil.html">Perfil</a>
                     </li>
                     <li class="linav">
                         <a href="./index.html" onclick="cerrarSesion()">Cerrar sesion</a>
@@ -43,15 +43,15 @@
             <div class="titleCrear">
                 <label for="">Nombre Asesor</label>
                 <input type="text" name="nombreasesor" id="nombreAsesor" class="input-crear"
-                    placeholder="nombre asesor">
+                    placeholder="nombre asesor" required>
             </div>
             <div class="titleCrear">
                 <label for="fecha">Fecha</label>
-                <input type="date" name="" id="" class="input-crear">
+                <input type="date" name="" id="" class="input-crear" required>
             </div>
             <div class="titleCrear">
                 <label for="hora">hora</label>
-                <input type="time" name="" id="" class="input-crear">
+                <input type="time" name="" id="" class="input-crear" required>
             </div>
             <div class="titleCrear">
                 <label for="">Tema</label>
@@ -60,7 +60,7 @@
             <div class="titleCrear">
                 <label for="">Descripcion:</label>
 
-                <textarea id="descripcion" name="descripcion" rows="7" cols="33">
+                <textarea id="descripcion" name="descripcion" rows="7" cols="33" >
                 
                 </textarea>
             </div>
@@ -70,6 +70,9 @@
             </div>
         </form>
     </section>
+    <footer>
+        footerr
+    </footer>
     <!-- section>
         <div class="container__access"  action="Usuarios" onsubmit="return validarPublicarAsesoria()">
                 <div class="form_contra_aseso">

@@ -1,0 +1,55 @@
+.perfil{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid red; */
+    height: 70vh;
+    margin-top: 3%;
+}
+.mainInfo{
+    /* border: 4px solid green; */
+    width: 60%;
+    height: 100vh;
+    align-self: center;
+}
+.wrap3divs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+.NameAndEmailDiv{
+    align-self: flex-start;
+    margin-left: 10%;
+    
+}
+.nameUser{
+    margin-bottom: 10%;
+}
+.nameUserTitle{
+    margin-top: 10%;
+}
+
+.fotoPerfil{
+    /* border: 4px solid greenyellow; */
+    width: 20%;
+    border-radius: 120px;
+}
+.fotoPerfil img{
+    width: 100%;
+    border-radius: 120px;
+}
+.description{
+    margin-top: 1%;
+    width: 30%;
+    align-self: center;
+}
+.description h1{
+    text-align: center;
+    margin-bottom: 3%;
+}
+.description  div{
+    border: 5px solid rgba(0, 0, 0, .5);
+    width: 100%;
+    background: none;
+    margin-bottom: 3%;
+}
